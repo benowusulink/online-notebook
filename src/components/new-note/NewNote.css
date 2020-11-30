@@ -1,0 +1,50 @@
+#new-note-main {
+  border: solid white 2px;
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgb(26, 55, 26);
+  padding-top: 5%;
+  margin-top: 3%;
+}
+
+#sec-1 {
+  margin-left: 5%;
+  width: auto;
+}
+
+#sec-1 label {
+  color: white;
+  margin-right: 3%;
+}
+
+#sec-1 input {
+  background-color: black;
+  border: solid white 2px;
+  color: white;
+  width: 40%;
+}
+
+#sec-1 button {
+  margin-left: 30%;
+}
+
+textarea {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+  height: 200px;
+  overflow-x: hidden;
+  background-color: black;
+  border: solid white 2px;
+  color: white;
+}
+
+#note-btns {
+  margin-left: 40%;
+  width: 35%;
+  margin-bottom: 2%;
+}
+
+#note-btns button {
+  width: 30%;
+}

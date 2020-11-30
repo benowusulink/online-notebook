@@ -1,0 +1,82 @@
+* {
+  list-style: none;
+}
+
+#main-nav-1 {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  padding-bottom: 0.1%;
+  padding-right: 1%;
+  border: solid white 3px;
+}
+
+#main-nav-1 ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-image {
+  border: solid rgb(206, 206, 206) 2px;
+  margin-right: 30%;
+  margin-top: 1%;
+}
+
+.logo-image img {
+  height: 100px;
+  width: auto;
+}
+
+.sign-in-link {
+  margin-right: 4%;
+  display: flex;
+  justify-content: flex-start;
+  width: 20%;
+  cursor: pointer;
+  height: 50px;
+  margin-top: 5.1%;
+}
+
+.sign-in-link label {
+  margin-right: 3%;
+  margin-top: 8%;
+  color: rgb(206, 206, 206);
+}
+
+.sign-in-link input {
+  height: 30px;
+  width: 80%;
+  margin-top: 5%;
+  border: solid rgb(206, 206, 206) 2px;
+  background-color: black;
+  color: rgb(206, 206, 206);
+}
+
+#submit {
+  cursor: pointer;
+  margin-top: 85%;
+  width: 100px;
+  color: rgb(206, 206, 206);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  border: rgb(206, 206, 206) solid 2px;
+  margin-left: -10%;
+}
+
+#submit:hover {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+#register {
+  cursor: pointer;
+  margin-top: 85%;
+  width: 100px;
+  color: black;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.9) solid 2px;
+}
+
+#register:hover {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  color: white;
+  border: white 2px solid;
+}

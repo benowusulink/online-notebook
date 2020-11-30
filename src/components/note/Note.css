@@ -1,0 +1,8 @@
+#note-main {
+  border: solid white 2px;
+  width: 100%;
+  background-color: rgb(26, 55, 26);
+  color: white;
+  height: 30px;
+  overflow-x: hidden;
+}

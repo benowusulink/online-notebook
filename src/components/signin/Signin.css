@@ -1,0 +1,19 @@
+#jumbotron {
+  border: solid white 3px;
+  height: 700px;
+  background-color: rgb(44, 82, 46);
+  margin-bottom: -10%;
+}
+
+#jumbotron h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#jumbotron img {
+  border: solid white 2px;
+  height: 500px;
+  margin-left: 32%;
+  margin-top: 3%;
+}
