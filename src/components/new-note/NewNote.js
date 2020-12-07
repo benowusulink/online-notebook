@@ -1,26 +1,37 @@
+//imports for the file
 import React, { Component } from "react";
 import "./NewNote.css";
 
+//React class component
 class NewNote extends Component {
+  /*React life-cycle method constructor which will 
+hold components state;
+*/
   constructor() {
     super();
     this.state = { title: "", note: "" };
   }
 
+  /*Function within class component that sets title
+   */
   onTitleChange = (event) => {
-    console.log(event.target.value);
     this.setState({ title: event.target.value });
   };
 
+  /*Function within class component that sets note
+   */
   onNoteChange = (event) => {
-    console.log(event.target.value);
     this.setState({ note: event.target.value });
   };
 
+  /*Function within class component that deals with 
+the button submit
+*/
   saveButton = () => {
     const { id, loadState } = this.props;
 
-    fetch("http://localhost:3003/new-note", {
+    //API POST request which sends json data within its body to the URL
+    fetch("https://enigmatic-fjord-29762.herokuapp.com/new-note", {
       method: "post",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -29,19 +40,30 @@ class NewNote extends Component {
         note: this.state.note,
       }),
     })
+      /* API request returns a promise which is json data,
+      file has to be converted into javascript object to be used
+      within React javascript
+      */
       .then((res) => {
         return res.json();
       })
+
+      /* If API returns json data we need, the data is used for the 
+      function in this components passed as props, the route of the app
+      is also changed to the home screen 
+      */
       .then((res) => {
         console.log(res);
         if (res.status === "success") {
-          console.log(res);
           this.deleteButton();
           loadState(res.info);
+          alert("note saved :)");
         }
       });
   };
 
+  /*Function within class component that erases the state and inputs
+   */
   deleteButton = () => {
     this.setState({
       title: "",
@@ -52,9 +74,13 @@ class NewNote extends Component {
     document.getElementById("notetext").value = "";
   };
 
+  /* React Life Cycle method Render
+   */
   render() {
     const { onRoutechange } = this.props;
 
+    /* Rendered component which will be displayed to the user
+     */
     return (
       <main id={`new-note-main`}>
         <section id={`sec-1`}>
@@ -90,5 +116,8 @@ class NewNote extends Component {
     );
   }
 }
+
+/* exporting component to be used with other files
+ */
 
 export default NewNote;

@@ -3,6 +3,7 @@
   width: 100%;
   background-color: rgb(26, 55, 26);
   color: white;
-  height: 30px;
+  height: 40px;
+  overflow-y: hidden;
   overflow-x: hidden;
 }

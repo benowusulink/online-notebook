@@ -1,8 +1,13 @@
+//imports for the file
 import React, { Component } from "react";
 import Notelist from "../notelist/Notelist.js";
 import NewNote from "../new-note/NewNote.js";
 
+//React class component
 class NoteContainer extends Component {
+  /*React life-cycle method constructor which will 
+hold components state;
+*/
   constructor(props) {
     super(props);
     this.state = {
@@ -18,20 +23,31 @@ class NoteContainer extends Component {
     };
   }
 
+  /*React life-cycle method componentDidMount which will 
+gets activated when component has fully mounted and rendered
+on the webpage, will cause the component to re reneder;
+*/
   componentDidMount() {
-    fetch("http://localhost:3003/note-container", {
+    fetch("https://enigmatic-fjord-29762.herokuapp.com/note-container", {
       method: "post",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
         id: this.state.id,
       }),
     })
+      /* API request returns a promise which is json data,
+      file has to be converted into javascript object to be used
+      within React javascript
+      */
       .then((res) => {
         return res.json();
       })
+
+      /* If API returns json data we need, the data is used for the 
+      function in this components passed as props
+      */
       .then((res) => {
-        console.log(res.info);
-        this.loadState(res.info); /*this.loadState(res)*/
+        this.loadState(res.info);
       });
   }
 
@@ -48,20 +64,16 @@ class NoteContainer extends Component {
     const notetitles = res.map((title) => {
       return title.notetitle;
     });
-    console.log(notetitles);
 
     const notes = res.map((notes) => {
       return notes.note;
     });
-    console.log(notes);
 
     this.setState({
       notetitle: notetitles,
       note: notes,
       id: this.props.id,
     });
-
-    console.log(this.state);
   };
 
   /* changing the value of the index of the 
@@ -71,6 +83,8 @@ class NoteContainer extends Component {
       noteid: value,
     });
   };
+  /* React Life Cycle method Render
+   */
 
   render() {
     switch (this.state.route) {
@@ -102,4 +116,6 @@ class NoteContainer extends Component {
   }
 }
 
+/* exporting component to be used with other files
+ */
 export default NoteContainer;

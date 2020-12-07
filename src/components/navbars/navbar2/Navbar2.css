@@ -65,3 +65,17 @@
 #submit:hover {
   background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
 }
+
+@media only screen and (max-width: 1200px) {
+  #submit {
+    margin-top: 82%;
+  }
+
+  .sign-in-link {
+    margin-left: -25%;
+  }
+
+  #password2 {
+    margin-left: 0.35%;
+  }
+}

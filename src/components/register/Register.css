@@ -1,3 +1,13 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.register h4 {
+  color: grey;
+}
+
 #register-form {
   border: solid white 2px;
   width: 40%;
@@ -5,7 +15,6 @@
   margin-top: 3%;
   background-color: rgb(13, 37, 14);
   color: white;
-  padding-left: 9%;
   padding-top: 2%;
   padding-bottom: 5%;
 }

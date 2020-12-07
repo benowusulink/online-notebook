@@ -1,11 +1,10 @@
+//imports for the file
 import React from "react";
 import "./ViewNote.css";
 
+//React dumb component which accepts props
 const ViewNote = (props) => {
-  console.log(props.noteid);
   const para = document.getElementById("view-note-text");
-  console.log(para);
-
   const data = (note, noteid) => {
     note.forEach((notes, i) => {
       if (i === noteid) {
@@ -30,4 +29,5 @@ const ViewNote = (props) => {
   }
 };
 
+// exporting component to be used with other files
 export default ViewNote;

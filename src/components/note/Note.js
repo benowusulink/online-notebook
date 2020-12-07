@@ -1,9 +1,10 @@
+//imports for the file
 import React from "react";
 import "./Note.css";
 
+//React dumb component which accepts props
 const Note = (props) => {
   const setIndex = (data) => {
-    console.log(data);
     props.noteIndex(data);
   };
 
@@ -27,4 +28,5 @@ const Note = (props) => {
   });
 };
 
+// exporting component to be used with other files
 export default Note;

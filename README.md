@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Web app Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Online Notebook Client
 
-## Available Scripts
+## General website information
 
-In the project directory, you can run:
+This is the client for a full stack application which
+includes an API server and database.
 
-### `npm start`
+The client for this app is a notebook which first allows you
+to create an account and login, create as many notes as you want
+and store it within the app via the database and then logout.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The notes you save will persist as there is datasbase as mentioned
+before so after you logout and log back in the data will last.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The aim when creating the client side of this application was to
+take advantage of React and Javascript features, focusing in
+particular on re using react components and handling data requested
+and received by an API into a single page application.
 
-### `npm test`
+## Programming Languages and tools used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Languages
 
-### `npm run build`
+- Javascript
+- React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Prettier (Mount code)
+- Bcrypt (End to end encryption)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Additional information
 
-### `npm run eject`
+1. Bcrypt has been temporarily disabled but the register and
+   login features will still work.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. The aim of this app wasnt to focus on design but the functional
+   features of a path between client, server and database
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future improvements (Agile Future Sprints)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Session management can be added by taking advantage of browser
+   storage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. UI improvements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Can make application progressive with browser service worker
+   and manifest.json

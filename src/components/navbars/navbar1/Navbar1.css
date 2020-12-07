@@ -27,7 +27,7 @@
   width: auto;
 }
 
-.sign-in-link {
+.sign-in-link1 {
   margin-right: 4%;
   display: flex;
   justify-content: flex-start;
@@ -37,13 +37,13 @@
   margin-top: 5.1%;
 }
 
-.sign-in-link label {
+.sign-in-link1 label {
   margin-right: 3%;
   margin-top: 8%;
   color: rgb(206, 206, 206);
 }
 
-.sign-in-link input {
+.sign-in-link1 input {
   height: 30px;
   width: 80%;
   margin-top: 5%;
@@ -52,7 +52,7 @@
   color: rgb(206, 206, 206);
 }
 
-#submit {
+#submit1 {
   cursor: pointer;
   margin-top: 85%;
   width: 100px;
@@ -62,7 +62,7 @@
   margin-left: -10%;
 }
 
-#submit:hover {
+#submit1:hover {
   background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
@@ -79,4 +79,24 @@
   background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
   color: white;
   border: white 2px solid;
+}
+
+@media only screen and (max-width: 1400px) {
+  #submit1 {
+    margin-top: 80%;
+  }
+
+  #register {
+    margin-top: 80%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sign-in-link1 {
+    margin-left: -25%;
+  }
+
+  #password1 {
+    margin-left: 0.3%;
+  }
 }

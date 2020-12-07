@@ -9,6 +9,6 @@
   height: 100%;
   background-color: rgb(18, 32, 18);
   color: white;
-  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 2%;
 }
