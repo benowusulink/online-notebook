@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/online-notebook/static/css/main.541cbfb3.chunk.css",
+    "main.js": "/online-notebook/static/js/main.2bb63361.chunk.js",
+    "main.js.map": "/online-notebook/static/js/main.2bb63361.chunk.js.map",
+    "runtime-main.js": "/online-notebook/static/js/runtime-main.d5476a55.js",
+    "runtime-main.js.map": "/online-notebook/static/js/runtime-main.d5476a55.js.map",
+    "static/css/2.43b2b750.chunk.css": "/online-notebook/static/css/2.43b2b750.chunk.css",
+    "static/js/2.a9f305d9.chunk.js": "/online-notebook/static/js/2.a9f305d9.chunk.js",
+    "static/js/2.a9f305d9.chunk.js.map": "/online-notebook/static/js/2.a9f305d9.chunk.js.map",
+    "index.html": "/online-notebook/index.html",
+    "static/css/2.43b2b750.chunk.css.map": "/online-notebook/static/css/2.43b2b750.chunk.css.map",
+    "static/css/main.541cbfb3.chunk.css.map": "/online-notebook/static/css/main.541cbfb3.chunk.css.map",
+    "static/js/2.a9f305d9.chunk.js.LICENSE.txt": "/online-notebook/static/js/2.a9f305d9.chunk.js.LICENSE.txt",
+    "static/media/logo_transparent.2d95393d.png": "/online-notebook/static/media/logo_transparent.2d95393d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5476a55.js",
+    "static/css/2.43b2b750.chunk.css",
+    "static/js/2.a9f305d9.chunk.js",
+    "static/css/main.541cbfb3.chunk.css",
+    "static/js/main.2bb63361.chunk.js"
+  ]
+}
