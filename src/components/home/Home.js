@@ -8,7 +8,7 @@ import NoteContainer from "../note-ctn/NoteContainer.js";
 const Home = (props) => {
   //Return for the dumb component
   return (
-    <Jumbotron fluid id={`jumbotron`}>
+    <Jumbotron fluid id={`jumbotron`} className={`home-jumbotron`}>
       <h1>{`Welcome ${props.name}`}</h1>
       <h2 id={`h2-message`}>
         {" "}
